@@ -6,7 +6,7 @@ import jwt_decode from "jwt-decode";
 export const registration = (email, password) => {
   return async (dispatch) => {
     try {
-      const response = await axios.post("https://coffee11.herokuapp.com/registration", {
+      const response = await axios.post("https://travi0.herokuapp.com/registration", {
         email,
         password,
       });
@@ -23,7 +23,7 @@ export const registration = (email, password) => {
 export const login = (email, password) => {
   return async (dispatch) => {
     try {
-      const response = await axios.post("https://coffee11.herokuapp.com/login", {
+      const response = await axios.post("https://travi0.herokuapp.com/login", {
         email,
         password,
       });
@@ -46,7 +46,7 @@ export const logout = () => {
 export const auth = () => {
   return async (dispatch) => {
     try {
-      const response = await axios.get("https://coffee11.herokuapp.com/login", {
+      const response = await axios.get("https://travi0.herokuapp.com/login", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
       dispatch(setUser(response.data.user));
