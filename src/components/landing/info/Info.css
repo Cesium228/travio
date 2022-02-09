@@ -1,0 +1,31 @@
+.info,
+.info_inner {
+  border: 1px solid blue;
+}
+.info {
+  width: 100%;
+  height: 14.6%;
+  display: flex;
+  justify-content: center;
+}
+.info_inner {
+  width: 95.8%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_text {
+  width: 14.5%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+}
